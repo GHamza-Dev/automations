@@ -1,0 +1,13 @@
+add_header Content-Security-Policy "default-src 'self' https://factureinterne.ancfcc.gov.ma https://facture.ancfcc.gov.ma; 
+		script-src 'self' https://factureinterne.ancfcc.gov.ma https://facture.ancfcc.gov.ma 'unsafe-inline' 'unsafe-eval'; 
+		style-src 'self' https://factureinterne.ancfcc.gov.ma https://facture.ancfcc.gov.ma 'unsafe-inline';
+		img-src 'self' https://factureinterne.ancfcc.gov.ma https://facture.ancfcc.gov.ma data:; 
+		font-src 'self' https://factureinterne.ancfcc.gov.ma https://facture.ancfcc.gov.ma data:; 
+		connect-src 'self' https://factureinterne.ancfcc.gov.ma https://facture.ancfcc.gov.ma; 
+		frame-ancestors 'self' https://factureinterne.ancfcc.gov.ma https://facture.ancfcc.gov.ma; 
+		frame-src 'self' https://factureinterne.ancfcc.gov.ma https://facture.ancfcc.gov.ma;
+		form-action 'self' https://factureinterne.ancfcc.gov.ma https://facture.ancfcc.gov.ma;";
+	add_header X-Content-Type-Options "nosniff" always;
+	add_header X-Frame-Options "SAMEORIGIN" always;
+	add_header X-XSS-Protection "1; mode=block" always;
+	add_header Referrer-Policy "strict-origin-when-cross-origin" always;
